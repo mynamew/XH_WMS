@@ -1,0 +1,282 @@
+<resources>
+    <string name="app_name">條碼追溯系統</string>
+
+    <!-- Strings related to login -->
+    <string name="property">© 版權所有：正業玖坤</string>
+    /******************************************************************************************************************************************************/
+    /******************************************************************************************************************************************************/
+    /**====== 異常 ======**/
+    <string name="exp_network_exception">網絡連接異常，請檢查您的網絡狀態</string>
+    <string name="exp_network_timeout">網絡連接超時，請檢查您的網絡狀態，稍後重試</string>
+    <string name="exp_json_error">數據解析錯誤</string>
+    <string name="exp_server_timeout">服務器連接超時</string>
+    /**====== 登錄 ======**/
+    <string name="user_log_tip">用戶登錄</string>
+    <string name="login_login">立即登錄</string>
+    <string name="login_inpiut_psw">請輸入密碼</string>
+    <string name="login_input_username">請輸入用戶名</string>
+    <string name="login_app_name">智能倉庫管理系統</string>
+    <string name="login_remember_psw">記錄密碼</string>
+    <string name="login_success">登錄成功</string>
+    <string name="language_simple">簡體</string>
+    <string name="language_tradtional">繁體</string>
+    <string name="language_english">英文</string>
+    <string name="login_select_language">請選擇語言</string>
+    /******************************************************************************************************************************************************/
+    /******************************************************************************************************************************************************/
+    /**====== 個人信息 ======**/
+    <string name="login_success_tip">提示：首次登錄需進行個人信息確認，如有問題，請到ERP中進行修改。</string>
+    <string name="name">姓名：%1$s</string>
+    <string name="sex">性別：%1$s</string>
+    <string name="work_num">工號：%1$s</string>
+    <string name="depart">部門：%1$s</string>
+    <string name="tel">手機：%1$s</string>
+    <string name="confirm">確定</string>
+    /******************************************************************************************************************************************************/
+    /******************************************************************************************************************************************************/
+    /**====== 個人設置 ======**/
+    /**====== 用戶信息 ======**/
+    <string name="set_userinfo_num">編號：%1$s</string>
+    <string name="set_userinfo_name">姓名：%1$s</string>
+    <string name="set_userinfo_sex">性別：%1$s</string>
+    <string name="set_userinfo_tel">手機：%1$s</string>
+    <string name="set_userinfo_from">所屬組織：%1$s</string>
+    <string name="set_userinfo_depart">部門：%1$s</string>
+    <string name="set_userinfo_root">權限組織：%1$s</string>
+    <string name="login_url_tip">地址：</string>
+    <string name="login_zuhu">租戶：</string>
+    <string name="login_language">語言：</string>
+    <string name="login_set">配置服務</string>
+    <string name="login_please_input_serverurl">請輸入服務地址</string>
+    <string name="login_please_input_right_serverurl">請輸入正確地址</string>
+    <string name="login_confirm_set">設置</string>
+    <string name="login_please_input_zuhu">請輸入租戶信息</string>
+    /**====== 設置 ======**/
+    <string name="set_language">選擇語言</string>
+    <string name="set_exit">退出登錄</string>
+    <string name="set_update_version">版本更新</string>
+    <string name="set_about">關於軟件</string>
+    <string name="set_update_psw">修改密碼</string>
+    <string name="set_device_info">設備信息</string>
+    <string name="set_userinfo">用戶信息</string>
+    <string name="server_set">服務設置</string>
+    <string name="set_team">組織切換</string>
+    <string name="go_login">去登錄</string>
+    <string name="is_new_version">已是最新版本，無需更新</string>
+    /**====== 設備信息 ======**/
+    <string name="deviceinfo">設備信息</string>
+    <string name="set_deviceinfo_num">設備編號：</string>
+    <string name="please_input_device_num">請輸入設備編號</string>
+    <string name="set_deviceinfo_mac">設備MAC：%1$s</string>
+    <string name="set_deviceinfo_ip">IP地址：%1$s</string>
+    <string name="comfirm_set">確認設置</string>
+    <string name="update_password">更改密碼</string>
+    <string name="set_pda_code_success">設置PDA參數成功！</string>
+    /**====== 更改密碼 ======**/
+    <string name="update_password_oldpsw">原密碼：</string>
+    <string name="please_input_old_psw">請輸入原密碼</string>
+    <string name="update_password_newpsw">新密碼：</string>
+    <string name="please_input_new_password">請輸入新密碼</string>
+    <string name="upadte_password_repeat">再壹次密碼：</string>
+    <string name="please_repeat_input_password">請再次輸入新密碼</string>
+    <string name="show_password">顯示密碼</string>
+    <string name="about">\t\t條碼追溯系統，利用條碼技術，賦給產品電子標簽、對物料進行條碼識別、工藝作業自動記錄等信息化技術手段，來進行防錯、監控、實時分析和追蹤等，實現產品生產的防錯、精益生產和管理，極大地提高了生產效益和產品質量，大大地提高了客戶的滿意度。</string>
+    <string name="confirm_logout">確認退出登錄？</string>
+    <string name="logout">退出登錄</string>
+    <string name="reset_server_will_logout">重新配置服務將退出登錄</string>
+    <string name="delete">刪除</string>
+    <string name="update">修改</string>
+    <string name="change_password_tip">密碼修改成功，請重新登錄！</string>
+    <string name="twice_password_no_same">兩次填寫的密碼不壹致！</string>
+    /**====== 首頁 ======**/
+    <string name="home_process_select">工序選擇</string>
+    <string name="aplly_material">供料上料</string>
+    <string name="inject_mold">註塑過站</string>
+    <string name="home_title">條碼追溯系統</string>
+    <string name="btn_commit">提交</string>
+    /**====== 錯誤提示 ======**/
+    <string name="error_title">錯誤提示</string>
+    <string name="dialog_batch_tip">有更早批次的物料可以進行清點, 點擊確定進行提交！</string>
+    <string name="close">關閉</string>
+    <string name="cancel">取消</string>
+    <string name="isloading">正在加載</string>
+    <string name="home_set">設置</string>
+    <string name="home_mine">我的</string>
+    <string name="none">無</string>
+    /**====== 工序選擇 ======**/
+    <string name="title_process_select">工序選擇</string>
+    <string name="commit_success">提交成功</string>
+    <string name="no_process">暫無工序</string>
+    <string name="no_process_no_commit">暫無工序，不能提交！</string>
+    <string name="process_list">工序列表</string>
+    <string name="user_not_select_process">用戶尚未選擇工序，請選擇工序！</string>
+    /**====== 供料上料 ======**/
+    <string name="title_add_material">供料上料</string>
+    <string name="no_worker_order_info">暫無工位信息</string>
+    <string name="scan_point_title">此單號系統中未找到，請確認後，再進行查詢！</string>
+    <string name="process_code">工序代碼</string>
+    <string name="worker_position">工位</string>
+    <string name="product_line">產線代碼</string>
+    <string name="worker_ordeer">工單</string>
+    <string name="product_code">產品代碼</string>
+    <string name="inject_machine">註塑機</string>
+    <string name="supply_material_machine">供料機</string>
+    <string name="tip_please_select_process">請先選擇工序再進行此操作！</string>
+    <string name="input_inject_machine">請輸入/掃描上註塑機</string>
+    <string name="tip_no_inject_machine_info">暫無註塑機信息</string>
+    <string name="tip_no_supply_material_machine_info">暫無供料機信息</string>
+    <string name="tip_no_mocode_info">暫無工單信息</string>
+    <string name="tip_add_material_barcode_check_success">上料條碼校驗成功,可以進行提交！</string>
+    <string name="tip_scan">掃碼提示</string>
+    <string name="tip_add_material_barcode_no_same_order">當前上料條碼與單號不壹致，是否強制提交？</string>
+    <string name="tip_inject_machine_not_alive">您輸入/掃描註塑機不存在！</string>
+    <string name="input_scan_device">輸入/掃描設備</string>
+    <string name="input_material_barcode">請輸入/掃描物料條碼</string>
+    <string name="process">工序</string>
+    <string name="input_scan_supply_machine">請輸入/掃描供料機</string>
+    <string name="tip_input_scan_supply_not_live">您輸入/掃描供料機不存在！</string>
+    /**====== 註塑過站 ======**/
+    <string name="title_inject_mold_pass">註塑過站</string>
+    <string name="input_add_material_code">請輸入/掃描上料單號</string>
+    <string name="input_product_code">請輸入/掃描產品序列號</string>
+    <string name="input_no_low_four">產品序列號的長度不能小於4</string>
+    <string name="tip_no_mould_info">暫無模具信息</string>
+    <string name="tip_inject_pass_success">註塑過站提交成功！</string>
+    <string name="tip_check_success">校驗成功！</string>
+    <string name="tip_please_select_bad_code">由於您選擇了不良品，請選擇不良代碼進行提交！</string>
+    <string name="input_bad_code">請輸入/選擇不良代碼</string>
+    <string name="mould">模具</string>
+    <string name="quality">品質</string>
+    <string name="good_quality">良品</string>
+    <string name="bad_quality">不良品</string>
+    <string name="product_num">產品序列號</string>
+    <string name="bad_code">不良代碼</string>
+    <string name="bad_code_group">不良代碼組</string>
+    <string name="remark">備註</string>
+    <string name="input_remark_info">請輸入備註信息</string>
+    <string name="input_scan_mold">請輸入/掃描模具</string>
+    <string name="tip_mold_no_live">您輸入/掃描模具不存在！</string>
+    /**====== CNC ======**/
+    <string name="input_cnc_tongs">請輸入/掃描CNC夾具</string>
+    <string name="title_cnc">CNC</string>
+    <string name="cnc_fixture">CNC夾具</string>
+    <string name="work_order_code">工單代碼</string>
+    <string name="product_name">產品名稱</string>
+    <string name="product_standard">規格型號</string>
+    <string name="tip_no_cnc_info">暫無CNC設備信息</string>
+    <string name="input_cnc_device">請輸入/掃描CNC設備</string>
+    <string name="cnc_device">CNC設備</string>
+    /**====== 拋光 ======**/
+    <string name="title_polish">拋光</string>
+    <string name="tip_no_polish_info">暫無拋光機信息</string>
+    <string name="polish_device">拋光設備</string>
+    <string name="tip_bad_code_have_selected">您選擇的不良代碼已經選中，請重新選擇！</string>
+    <string name="tip_set_servise_address">請先配置服務地址</string>
+    <string name="tip_username">請輸入用戶名</string>
+    <string name="tip_password">請輸入密碼</string>
+    <string name="input_polish_device">請輸入/掃描拋光設備</string>
+    /**====== ipqc 外觀抽檢作業 ======**/
+    <string name="input_batch_no">請輸入/生成批次號</string>
+    <string name="input_serial_no">請輸入/掃描序列號</string>
+    <string name="quality_batch_no">抽檢批號</string>
+    <string name="create_batch_no">生成批號</string>
+    <string name="quality_name">質檢名稱</string>
+    <string name="quality_dsc">質檢描述</string>
+    <string name="process_name">工序名稱</string>
+    <string name="time_frame_code">時段代碼</string>
+    <string name="time_frame_name">時段名稱</string>
+    <string name="plan_date">計劃日期</string>
+    <string name="actual_sample">實際樣本</string>
+    <string name="pass_sample">合格樣本</string>
+    <string name="unpass_sample">不合格樣本</string>
+    <string name="product_status">狀態</string>
+    <string name="batch_pass">批通過</string>
+    <string name="batch_return">批退</string>
+    <string name="title_appearance_quality">外觀抽檢</string>
+    <string name="tip_select_timeframe_low">當前操作時間不能小於您所選的時間段!</string>
+    <string name="tip_create_batch_no_success">生成批號成功！</string>
+    <string name="tip_product_serial_check_success">產品序列號校驗成功！</string>
+    <string name="tip_save_check_result_success">保存檢驗結果成功！</string>
+    <string name="tip_select_bad_code">您檢驗項目結果為不良，請選擇不良代碼！</string>
+    <string name="tip_complete_checkitems">請先完成檢驗項目！</string>
+    <string name="tip_all_checkiten_have_complete">所有檢驗項目已完成！</string>
+    <string name="title_product_result">產品檢驗</string>
+    <string name="complete">完成</string>
+    /**====== 版本更新======**/
+    <string name="tip_forced_update">當前更新為強制更新，請安裝最新版本！</string>
+    <string name="tip_version_update">版本更新</string>
+    <string name="user_have_select">用戶已選擇</string>
+    /**====== 工序是否正確的判斷======**/
+    <string name="tip_no_inject_process">當前工序不是註塑工序，請先選擇工序</string>
+    <string name="process_inject">MD</string>
+    <string name="tip_no_polish_process">當前工序不是拋光工序，請先選擇工序！</string>
+    <string name="process_polish">PRL</string>
+    <string name="process_cnc1">CNC1</string>
+    <string name="process_cnc2">CNC2</string>
+    <string name="tip_no_cnc_process1">當前工序不是CNC1工序，請先選擇工序！</string>
+    <string name="tip_no_cnc_process2">當前工序不是CNC2工序，請先選擇工序！</string>
+    <string name="next">下一項</string>
+    <string name="quality_total">抽檢總數</string>
+    <string name="count_quality_total">計算抽檢總數</string>
+    <string name="tip_bad_code_no_alive">您輸入/掃描的不良代碼不存在！</string>
+    <string name="diluent">稀釋劑條碼</string>
+    <string name="input_diluent_barcode">請輸入/掃描稀釋劑條碼</string>
+    <string name="paint_barcode">噴漆條碼</string>
+    <string name="input_paint_code">請輸入/掃描噴漆條碼</string>
+    <string name="title_paint">噴漆上料</string>
+    <string name="process_paint">SP</string>
+    <string name="tip_no_paint">當前工序不是噴漆工序，請先選擇工序</string>
+    <string name="tip_no_cnc_device">您輸入/掃描的CNC設備不存在！</string>
+    <string name="tip_no_polish_device">您輸入的抛光設備不存在！</string>
+    <string name="input_piant">請輸入/掃描噴漆設備</string>
+    <string name="tip_no_paint_device">您輸入/掃描的噴漆設備不存在！</string>
+    <string name="paint_device">噴漆設備</string>
+    /**====== 抽檢記錄======**/
+    <string name="title_check_record">抽檢記錄</string>
+    <string name="tip_no_time">暫無時段</string>
+    <string name="input_batch_no_quality">請輸入/掃描批次號</string>
+    <string name="query_tip">查詢提示</string>
+    <string name="tip_no_check_record">未查詢到相關抽檢記錄！</string>
+    <string name="pass">合格</string>
+    <string name="unpass">不合格</string>
+    <string name="start_dat">開始日期</string>
+    <string name="end_date">結束日期</string>
+    <string name="time_period_process"><![CDATA[時段&工序]]></string>
+    <string name="time_period">時段</string>
+    <string name="batchno">批次</string>
+    <string name="batch_no">批次號</string>
+    <string name="query">查詢</string>
+    <string name="date">日期</string>
+    <string name="result">結果</string>
+    <string name="status">狀態：</string>
+    <string name="please_select">請選擇</string>
+    /**====== 选择设备======**/
+    <string name="device_type">設備類型</string>
+    <string name="title_select_device">選擇設備</string>
+    <string name="tip_select_device_type">請選擇設備類型！</string>
+    <string name="tip_device_not_alive">您輸入/掃描的設備不存在！</string>
+    <string name="device">設備</string>
+    <string name="all">全部</string>
+    <string name="tip_input_device_noalive">您輸入的設備不存在！</string>
+    <string name="count_pass_qty">过站计数器：</string>
+    /**====== 成品入库======**/
+    <string name="create_task_orderno">生产任务单</string>
+    <string name="create_orderno_date_tip">制单日期</string>
+    <string name="orderno_num">单据总数</string>
+    <string name="wait_count_num">待点总数</string>
+    <string name="have_count_num">已扫总数</string>
+    <string name="in_stock_total_num">入库总数</string>
+    <string name="create_product_orderno">生成产成品入库单</string>
+    <string name="materail_info">物料信息</string>
+    <string name="lib_code">目的库位码</string>
+    <string name="please_scan_lib_location_code">请输入或扫描库位码</string>
+    <string name="scan_material">物料条码</string>
+    <string name="please_scan_material_code">请输入或扫描物料码</string>
+    <string name="scan_info">扫描信息</string>
+    <string name="item_material_code">物料编码</string>
+    <string name="item_material_num">物料数量</string>
+    <string name="item_material_name">物料名称</string>
+    <string name="item_material_model">规格型号</string>
+    <string name="item_material_attr">附加属性</string>
+    <string name="header_wait_count_num">清点</string>
+</resources>

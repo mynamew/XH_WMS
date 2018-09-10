@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.ipqc.CheckAppearanceActivity">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/title_head"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10px"
+        android:layout_marginRight="20px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="88px"
+            android:layout_marginRight="20px"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_bottom_product_serial_no_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20px"
+                android:text="序列号"
+                android:textColor="#333"
+                android:textSize="13sp"
+                />
+
+            <EditText
+                android:id="@+id/et_bottom_product_serial_no"
+                android:layout_width="match_parent"
+                android:layout_height="64px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toEndOf="@id/tv_bottom_product_serial_no_tip"
+                android:layout_toRightOf="@id/tv_bottom_product_serial_no_tip"
+                android:background="@drawable/selector_et"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/input_serial_no"
+                android:imeOptions="actionSearch"
+                android:inputType="textVisiblePassword"
+                android:paddingLeft="20px"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:id="@+id/iv_bottom_product_serial_no_scan"
+                android:layout_width="100px"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:paddingLeft="60px"
+                android:src="@mipmap/ic_scan"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_batch_pass"
+            android:layout_width="110px"
+            android:layout_height="64px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10px"
+            android:background="@drawable/selector_btn_bg_login"
+            android:text="@string/batch_pass"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btn_batch_return"
+            android:layout_width="110px"
+            android:layout_height="64px"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_btn_bg_login"
+            android:text="@string/batch_return"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_below="@id/head">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginRight="20px"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="88px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_add_material_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20px"
+                        android:text="@string/quality_batch_no"
+                        android:textColor="#333"
+                        android:textSize="13sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_batch_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="64px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toEndOf="@id/tv_add_material_tip"
+                        android:layout_toRightOf="@id/tv_add_material_tip"
+                        android:background="@drawable/selector_et"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_batch_no"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textVisiblePassword"
+                        android:paddingLeft="20px"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="13sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_scan"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:paddingLeft="60px"
+                        android:src="@mipmap/ic_scan"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_create_batchno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_btn_bg_login"
+                    android:text="@string/create_batch_no"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/quality_name"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rectangle_et_unfocused"
+                    android:orientation="horizontal"
+                    android:padding="5px">
+
+                    <com.jzk.spinnerlibrary.MaterialSpinner
+                        android:id="@+id/spinner_quality_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="64px"
+                        android:textSize="13sp"
+                        app:ms_dropdown_height="wrap_content"
+                        app:ms_dropdown_max_height="350dp"
+                        app:ms_hint_color="@color/color_666"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quality_dsc"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_quality_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text=""
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:background="@color/divide_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/home_process_select"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rectangle_et_unfocused"
+                    android:orientation="horizontal"
+                    android:padding="5px">
+
+                    <com.jzk.spinnerlibrary.MaterialSpinner
+                        android:id="@+id/spinner_process"
+                        android:layout_width="match_parent"
+                        android:layout_height="64px"
+                        android:textSize="13sp"
+                        app:ms_dropdown_height="wrap_content"
+                        app:ms_dropdown_max_height="350dp"
+                        app:ms_hint_color="@color/color_666"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/process_name"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_process_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text=""
+                    android:textColor="#666"/>
+            </LinearLayout>
+            <com.jzk.hebi_wms.view.DeviceView
+                android:id="@+id/dv_machine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isContainSpinner="true"
+                app:textInput="@string/input_device"
+                app:noMapStrTip="@string/tip_device_not_alive"
+                app:isScanByCamera="false"
+                app:textTip="@string/device"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:background="@color/divide_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/time_frame_code"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rectangle_et_unfocused"
+                    android:orientation="horizontal"
+                    android:padding="5px">
+
+                    <com.jzk.spinnerlibrary.MaterialSpinner
+                        android:id="@+id/spinner_time_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="64px"
+                        android:textSize="13sp"
+                        app:ms_dropdown_height="wrap_content"
+                        app:ms_dropdown_max_height="350dp"
+                        app:ms_hint_color="@color/color_666"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_frame_name"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_time_frame_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text=""
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/plan_date"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rectangle_et_unfocused"
+                    android:orientation="horizontal"
+                    android:padding="5px">
+
+                    <com.jzk.spinnerlibrary.MaterialSpinner
+                        android:id="@+id/spinner_project_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="64px"
+                        android:textSize="13sp"
+                        app:ms_dropdown_height="wrap_content"
+                        app:ms_dropdown_max_height="350dp"
+                        app:ms_hint_color="@color/color_666"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:background="@color/divide_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/actual_sample"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_time_actual_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="0"
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pass_sample"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_pass_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="0"
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unpass_sample"
+                    android:textColor="#333"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_unpass_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="0"
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginRight="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20px"
+                    android:text="@string/quality_total"
+                    android:textColor="#333"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_quality_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#666"/>
+
+                <Button
+                    android:id="@+id/btn_mark_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_btn_bg_login"
+                    android:text="@string/count_quality_total"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:background="@color/divide_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_product_serial_no"
+                    android:layout_width="0dp"
+                    android:layout_height="64px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/product_num"
+                    android:textColor="@color/color_666"
+                    android:textSize="13sp"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/divide_color"/>
+
+                <TextView
+                    android:id="@+id/tv_product_status"
+                    android:layout_width="0dp"
+                    android:layout_height="64px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/product_status"
+                    android:textColor="@color/color_666"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

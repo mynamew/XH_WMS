@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">Barcode traceability system</string>
+
+    <!-- Strings related to login -->
+    <string name="property">© Copyright：Nine Kun</string>
+    /******************************************************************************************************************************************************/
+    /******************************************************************************************************************************************************/
+    /**====== 登录 ======**/
+    <string name="user_log_tip">LogIn</string>
+    <string name="login_login">LogIn</string>
+    <string name="login_inpiut_psw">Please enter password</string>
+    <string name="login_input_username">Please enter the user name</string>
+    <string name="login_app_name">WMS</string>
+    <string name="login_remember_psw">Record the password</string>
+    <string name="login_success">Login successful</string>
+    <string name="language_simple">Simplified</string>
+    <string name="language_tradtional">Traditional</string>
+    <string name="language_english">English</string>
+    <string name="login_select_language">Please select language</string>
+    /******************************************************************************************************************************************************/
+    /******************************************************************************************************************************************************/
+    /**====== 个人信息 ======**/
+    <string name="login_success_tip">Tip: first login requires personal information confirmation. If there are problems, please go to ERP for revision.</string>
+    <string name="name">Full name：%1$s</string>
+    <string name="sex">Sex：%1$s</string>
+    <string name="work_num">Work number：%1$s</string>
+    <string name="depart">Department：%1$s</string>
+    <string name="tel">Mobile phone：%1$s</string>
+    <string name="confirm">Confrim</string>
+    /******************************************************************************************************************************************************/
+    /******************************************************************************************************************************************************/
+    /**====== 个人设置 ======**/
+    /**====== 用户信息 ======**/
+    <string name="set_userinfo_num">Serial number：%1$s</string>
+    <string name="set_userinfo_name">\t\t\t\t\t Name：%1$s</string>
+    <string name="set_userinfo_sex">\t\t\t\t\t\t\tSex：%1$s</string>
+    <string name="set_userinfo_tel">\t\t\t\t\t\t\tTell：%1$s</string>
+    <string name="set_userinfo_from">\tOrganisation：%1$s</string>
+    <string name="set_userinfo_depart">\t Department：%1$s</string>
+    <string name="set_userinfo_root">Authority organization：%1$s</string>
+    <string name="login_url_tip">Address：</string>
+    <string name="login_zuhu">Tenant：</string>
+    <string name="login_language">Language：</string>
+    <string name="login_set">Configure the service</string>
+    <string name="login_please_input_serverurl">Please enter service addres</string>
+    <string name="login_please_input_right_serverurl">Please enter the correct address</string>
+    <string name="login_confirm_set">Set</string>
+    <string name="login_please_input_zuhu">Please enter tenant information</string>
+    <string name="is_new_version">It is the latest version, no need to update is the latest version, no need to update</string>
+    /**====== 設置 ======**/
+    <string name="set_language">Select Language</string>
+    <string name="set_exit">Log out</string>
+    <string name="set_update_version">Version Update</string>
+    <string name="set_about">About APP</string>
+    <string name="set_update_psw">Change Password</string>
+    <string name="set_device_info">Device Info</string>
+    <string name="set_userinfo">UserInfo</string>
+    <string name="server_set">Service Set</string>
+    <string name="set_team">Exchange organization</string>
+    <string name="go_login">Go LogIn</string>
+    <string name="switch_org_title">Exchange Organization</string>
+    /**====== 设备信息 ======**/
+    <string name="deviceinfo">Device Info</string>
+    <string name="set_deviceinfo_num">Device Number：</string>
+    <string name="please_input_device_num">Please input device number</string>
+    <string name="set_deviceinfo_mac">Device MAC：%1$s</string>
+    <string name="set_deviceinfo_ip">IP Address：%1$s</string>
+    <string name="comfirm_set">Confrim Set</string>
+    <string name="update_password">Update Password</string>
+    <string name="set_pda_code_success">Set the PDA parameter to success!</string>
+    /**====== 更改密码 ======**/
+    <string name="update_password_oldpsw">Old Password：</string>
+    <string name="please_input_old_psw">Please input old password</string>
+    <string name="update_password_newpsw">New Password：</string>
+    <string name="please_input_new_password">Please input new password</string>
+    <string name="upadte_password_repeat">Confrim Password：</string>
+    <string name="please_repeat_input_password">Please enter your new password again</string>
+    <string name="show_password">Show the password</string>
+    <string name="about">\t\tWMS is a Warehouse Management System (Warehouse Management System), Warehouse Management System is through the warehousing business, outbound business, warehouses, allocating and virtual Warehouse inventory Management, and other functions, the corresponding batch Management, materials, inventory, quality Management, virtual Warehouse inventory Management and just-in-time inventory Management functions such as the integrated use of Management System, effective control and follow up Warehouse logistics and whole process cost Management of the business, implementation or perfect enterprise storage and information Management.The system can carry out inventory operation independently, and can be used in combination with other system documents and vouchers, which can provide enterprises with more complete enterprise logistics management process and financial management information.</string>
+    <string name="confirm_logout">Confrim Log Out？</string>
+    <string name="logout">Log Out</string>
+    <string name="reset_server_will_logout">Reconfigure the service to log out.</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="change_password_tip">Password changed successfully, please login again!</string>
+    <string name="twice_password_no_same">The two passwords are not consistent！</string>
+    /******************************************************************************************************************************************************/
+    /******************************************************************************************************************************************************/
+    /**====== 首页 ======**/
+    <string name="home_process_select">Process selection</string>
+    <string name="aplly_material">Feeding material</string>
+    <string name="inject_mold">Injection station</string>
+    <string name="btn_commit">commit</string>
+    <string name="home_set">Set</string>
+    <string name="home_mine">Mine</string>
+    <string name="home_title">Barcode traceability system</string>
+    /**====== 错误提示 ======**/
+    <string name="error_title">Error Tip</string>
+    <string name="dialog_batch_tip">The material with earlier batch can be counted, click ok to submit!</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="isloading">Loading</string>
+    /**====== 工序选择 ======**/
+    <string name="title_process_select">Process selection</string>
+    <string name="commit_success">Submission of success</string>
+    <string name="no_process">No process</string>
+    <string name="process_list">Process List</string>
+    <string name="user_not_select_process">The user has not selected procedure, please select procedure!</string>
+    <string name="no_process_no_commit">No process, can not be submitted!</string>
+    <string name="user_have_select">User selected</string>
+    <string name="process">Process</string>
+    /**====== 供料上料 ======**/
+    <string name="title_add_material">Feeding material</string>
+    <string name="no_worker_order_info">No station information</string>
+    <string name="scan_point_title">This single number system has not been found. Please confirm it and check again.</string>
+    <string name="process_code">Process code</string>
+    <string name="worker_position">Work position</string>
+    <string name="product_line">Line code</string>
+    <string name="worker_ordeer">Work list</string>
+    <string name="product_code">Product code</string>
+    <string name="inject_machine">Injection molding machine</string>
+    <string name="supply_material_machine">Feeding machine</string>
+    <string name="tip_please_select_process">Please select the process first and then do this！</string>
+    <string name="input_inject_machine">Please input / scan the injection molding machine</string>
+    <string name="tip_no_inject_machine_info">No information on injection molding machine</string>
+    <string name="tip_no_supply_material_machine_info">No information on feeding machine</string>
+    <string name="tip_no_mocode_info">No work list information</string>
+    <string name="tip_add_material_barcode_check_success">The bar code check is successful and can be submitted！</string>
+    <string name="tip_scan">Scavenging hint</string>
+    <string name="tip_add_material_barcode_no_same_order">At present, the barcode is not identical with the odd number. Is it compulsory to submit?？</string>
+    <string name="tip_inject_machine_not_alive">Your input / scan injection molding machine does not exist！</string>
+    <string name="input_scan_device">Input/scan equipment</string>
+    <string name="input_material_barcode">Please enter/scan the barcode</string>
+    <string name="input_scan_supply_machine">Please enter/scan feeder</string>
+    <string name="tip_input_scan_supply_not_live">Your input/scan feeder does not exist!</string>
+    /**====== 注塑过站 ======**/
+    <string name="title_inject_mold_pass">Injection station</string>
+    <string name="input_add_material_code">Please input / scan single number</string>
+    <string name="input_product_code">Please enter / scan the serial number of the product</string>
+    <string name="input_no_low_four">The length of the serial number of the product should not be less than 4</string>
+    <string name="tip_no_mould_info">No mold information</string>
+    <string name="tip_inject_pass_success">Injection station submission success！</string>
+    <string name="tip_check_success">Check success！</string>
+    <string name="tip_please_select_bad_code">Since you have chosen bad products, please select bad code for submission.！</string>
+    <string name="input_bad_code">Please enter / select bad code</string>
+    <string name="mould">mould</string>
+    <string name="quality">quality</string>
+    <string name="good_quality">Good product</string>
+    <string name="bad_quality">Rejects</string>
+    <string name="product_num">product ID</string>
+    <string name="bad_code">Bad code</string>
+    <string name="bad_code_group">Bad code group</string>
+    <string name="remark">Remarks</string>
+    <string name="input_remark_info">Please enter the note information</string>
+    <string name="input_scan_mold">Please enter/scan the mold</string>
+    <string name="tip_mold_no_live">You input/scan mold does not exist!</string>
+    /**====== CNC ======**/
+    <string name="input_cnc_tongs">Please enter / scan the CNC fixture</string>
+    <string name="title_cnc">CNC</string>
+    <string name="cnc_fixture">CNC jig</string>
+    <string name="work_order_code">Worksheet code</string>
+    <string name="product_name">Product name</string>
+    <string name="product_standard">Specification model</string>
+    <string name="tip_no_cnc_info">No CNC equipment information</string>
+    <string name="input_cnc_device">Please input/scan CNC equipment</string>
+    <string name="cnc_device">CNC equipment</string>
+    /**====== 抛光 ======**/
+    <string name="input_polish_device">Please enter/scan polishing device</string>
+    <string name="title_polish">Polishing</string>
+    <string name="tip_no_polish_info">No polishing machine information</string>
+    <string name="polish_device">Polishing equipment</string>
+    <string name="tip_bad_code_have_selected">The bad code you selected has been selected, please select it again!</string>
+    <string name="tip_set_servise_address">Please configure the service address first</string>
+    <string name="tip_username">Please enter the username</string>
+    <string name="tip_password">Please enter the password</string>
+    /**====== ipqc 外观抽检作业 ======**/
+    <string name="input_batch_no">Please enter/generate batch number</string>
+    <string name="input_serial_no">Please enter/scan the serial number</string>
+    <string name="quality_batch_no">CheckBatchNo</string>
+    <string name="create_batch_no">Create BatchNo</string>
+    <string name="quality_name">Quality Name</string>
+    <string name="quality_dsc">Quality Desc</string>
+    <string name="process_name">Process Name</string>
+    <string name="time_frame_code">Time Frame Code</string>
+    <string name="time_frame_name">Time Frame Name</string>
+    <string name="plan_date">Plan Date</string>
+    <string name="actual_sample">Actual Sample</string>
+    <string name="pass_sample">Pass Sample</string>
+    <string name="unpass_sample">UnPass Sample</string>
+    <string name="product_status">Status</string>
+    <string name="batch_pass">Batch Pass</string>
+    <string name="batch_return">Batch UnPass</string>
+    <string name="title_appearance_quality">Appearance Check</string>
+    <string name="tip_select_timeframe_low">The current operation time cannot be less than the time period you selected!</string>
+    <string name="tip_create_batch_no_success">Batch number generated successfully!</string>
+    <string name="tip_product_serial_check_success">Product serial number verification successful!</string>
+    <string name="tip_save_check_result_success">Save test results successfully!</string>
+    <string name="tip_select_bad_code">You check the project result is bad, please select bad code!</string>
+    <string name="tip_complete_checkitems">Please finish the inspection project first!</string>
+    <string name="tip_all_checkiten_have_complete">All inspection items have been completed!</string>
+    <string name="title_product_result">Product Check</string>
+    <string name="complete">Complete</string>
+    /**====== 版本更新======**/
+    <string name="tip_forced_update">The current update is mandatory, please install the latest version!</string>
+    <string name="tip_version_update">Version Update</string>
+    /**====== 工序是否正确的判断======**/
+    <string name="tip_no_inject_process">The current procedure is not injection molding. Please select the procedure first</string>
+    <string name="process_inject">MD</string>
+    <string name="tip_no_polish_process">The current process is not the polishing process, please select the process first!</string>
+    <string name="process_polish">PRL</string>
+    <string name="process_cnc1">CNC1</string>
+    <string name="process_cnc2">CNC2</string>
+    <string name="tip_no_cnc_process1">The current process is not CNC1 process, please select the process first!</string>
+    <string name="tip_no_cnc_process2">The current process is not CNC2 process, please select the process first!</string>
+    <string name="next">Next </string>
+    <string name="quality_total">Check Total Qty</string>
+    <string name="count_quality_total">Calculate Total Qty</string>
+    <string name="tip_bad_code_no_alive">Bad code you entered/scanned does not exist!</string>
+    <string name="diluent">Thinner Barcode</string>
+    <string name="input_diluent_barcode">Please enter/scan thinner bar code</string>
+    <string name="paint_barcode">Paint Barcode</string>
+    <string name="input_paint_code">Please enter/scan paint bar code</string>
+    <string name="title_paint">Spray paint on the material</string>
+    <string name="process_paint">SP</string>
+    <string name="tip_no_paint">The current procedure is not spray paint. Please select the procedure first</string>
+    <string name="tip_no_cnc_device">The CNC equipment you input/scan does not exist!</string>
+    <string name="tip_no_polish_device">The polishing device you entered does not exist!</string>
+    <string name="input_piant">Please enter/scan painting equipment</string>
+    <string name="tip_no_paint_device">Paint spray equipment you input/scan does not exist!</string>
+    <string name="paint_device">Paint Device</string>
+    /**====== 抽检记录======**/
+    <string name="title_check_record">Check the record</string>
+    <string name="tip_no_time">No time</string>
+    <string name="input_batch_no_quality">Please enter/scan batch number</string>
+    <string name="query_tip">Query Tip</string>
+    <string name="tip_no_check_record">No relevant sampling record has been found!</string>
+    <string name="pass">Pass</string>
+    <string name="unpass">UnPass</string>
+    <string name="start_dat">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="time_period_process"><![CDATA[Time&Process]]></string>
+    <string name="time_period">Time</string>
+    <string name="batchno">Batch</string>
+    <string name="batch_no">BatchNo</string>
+    <string name="query">Query</string>
+    <string name="date">Date</string>
+    <string name="result">Result</string>
+    <string name="status">Status：</string>
+    <string name="please_select">Please Select</string>
+    /**====== 选择设备======**/
+    <string name="device_type">Ddevice Type</string>
+    <string name="title_select_device">Select Device</string>
+    <string name="tip_select_device_type">Please select the device type！</string>
+    <string name="tip_device_not_alive">The device you entered/scanned does not exist！</string>
+    <string name="device">Equipment</string>
+    <string name="all">All</string>
+    <string name="tip_input_device_noalive">The device you entered does not exist！</string>
+    <string name="count_pass_qty">过站计数器：</string>
+    /**====== 成品入库======**/
+    <string name="create_task_orderno">生产任务单</string>
+    <string name="create_orderno_date_tip">制单日期</string>
+    <string name="orderno_num">单据总数</string>
+    <string name="wait_count_num">待点总数</string>
+    <string name="have_count_num">已扫总数</string>
+    <string name="in_stock_total_num">入库总数</string>
+    <string name="create_product_orderno">生成产成品入库单</string>
+    <string name="materail_info">物料信息</string>
+    <string name="lib_code">目的库位码</string>
+    <string name="please_scan_lib_location_code">请输入或扫描库位码</string>
+    <string name="scan_material">物料条码</string>
+    <string name="please_scan_material_code">请输入或扫描物料码</string>
+    <string name="scan_info">扫描信息</string>
+    <string name="item_material_code">物料编码</string>
+    <string name="item_material_num">物料数量</string>
+    <string name="item_material_name">物料名称</string>
+    <string name="item_material_model">规格型号</string>
+    <string name="item_material_attr">附加属性</string>
+    <string name="header_wait_count_num">清点</string>
+</resources>
