@@ -30,6 +30,7 @@ public class InjectMouldCommitRequest {
     private String errorcode;
     private String remark;
     private String mouldcode;
+    private String mouldcode2;
     private String materialCard;
     private String materialbatch;
     private String employeecode;
@@ -203,5 +204,13 @@ public class InjectMouldCommitRequest {
 
     public void setMaterialCard(String materialCard) {
         this.materialCard = materialCard;
+    }
+
+    public String getMouldcode2() {
+        return mouldcode2;
+    }
+
+    public void setMouldcode2(String mouldcode2) {
+        this.mouldcode2 = mouldcode2;
     }
 }

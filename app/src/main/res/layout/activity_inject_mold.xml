@@ -128,7 +128,16 @@
                     app:noMapStrTip="@string/tip_mold_no_live"
                     app:textInput="@string/input_scan_mold"
                     app:textTip="@string/mould"/>
-
+                <com.jzk.xh_wms.view.DeviceView
+                    android:id="@+id/dv_mold2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    app:isContainSpinner="true"
+                    app:isScanByCamera="false"
+                    app:noMapStrTip="@string/tip_mold_no_live"
+                    app:textInput="@string/input_scan_mold"
+                    app:textTip="@string/mould"/>
             </LinearLayout>
 
             <LinearLayout

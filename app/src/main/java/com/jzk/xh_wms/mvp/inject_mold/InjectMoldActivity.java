@@ -104,6 +104,8 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
     TextView btnCommit;
     @BindView(R.id.tv_count_pass_qty)
     TextView tvCountPassQty;
+    @BindView(R.id.dv_mold2)
+    DeviceView dvMold2;
 
     /********工位***********************************************************************************************/
     /**
@@ -363,6 +365,13 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
             dvMold.setSpinnerSelectIndex(0);
             //设置数据源
             dvMold.initDeviceData(mMoulds);
+            /**
+             * 初始化数据
+             */
+            dvMold2.setEdittextContent(mMoulds.get(0).getValue());
+            dvMold2.setSpinnerSelectIndex(0);
+            //设置数据源
+            dvMold2.initDeviceData(mMoulds);
             return;
         }
 
@@ -370,18 +379,17 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
          * 处理点击事件，获取供料机的列表
          */
         String[] split = mInjectMolds.get(position).getRelatedEquipment().trim().split("\\|");
-        if (split.length >= 3) {
-            boolean isHaveData = false;
-            for (int i = 0; i < mOldMoulds.size(); i++) {
-                if (mOldMoulds.get(i).getValue().equals(split[2])) {
+        boolean isHaveData = false;
+        for (int i = 0; i < mOldMoulds.size(); i++) {
+            for (int j = 0; j < split.length; j++) {
+                if (split[j].equals(mOldMoulds.get(i).getValue())) {
                     isHaveData = true;
+                    mMoulds.add(mOldMoulds.get(i));
                     mMoulds.add(mOldMoulds.get(i));
                 }
             }
-            if (!isHaveData) {
-                mMoulds.addAll(mOldMoulds);
-            }
-        } else {
+        }
+        if (!isHaveData) {
             mMoulds.addAll(mOldMoulds);
         }
         /**
@@ -391,12 +399,20 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
         dvMold.setSpinnerSelectIndex(0);
         //设置数据源
         dvMold.initDeviceData(mMoulds);
+        /**
+         * 初始化数据
+         */
+        dvMold2.setEdittextContent(mMoulds.get(0).getValue());
+        dvMold2.setSpinnerSelectIndex(0);
+        //设置数据源
+        dvMold2.initDeviceData(mMoulds);
     }
 
     @Override
     public void getMould(InjectMoldBean o) {
         if (null == o.getEqpments() || o.getEqpments().isEmpty()) {
             dvMold.setSpinnerText(R.string.tip_no_mould_info);
+            dvMold2.setSpinnerText(R.string.tip_no_mould_info);
         } else {
             List<InjectMoldBean.EqpmentsBean> stations = o.getEqpments();
             mMoulds.clear();
@@ -404,6 +420,7 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
             mOldMoulds.clear();
             mOldMoulds.addAll(stations);
             dvMold.initDeviceData(mMoulds);
+            dvMold2.initDeviceData(mMoulds);
         }
         if (!mMoulds.isEmpty() && !mInjectMolds.isEmpty()) {
             dealWithInjectAndSupply(0);
@@ -549,7 +566,7 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
 
     @Override
     public void collectionMoldingAsync(InjectPassBean o) {
-        tvCountPassQty.setText(String.valueOf(Integer.parseInt(tvCountPassQty.getText().toString().trim())+1));
+        tvCountPassQty.setText(String.valueOf(Integer.parseInt(tvCountPassQty.getText().toString().trim()) + 1));
         dismissProgressDialog();
         ToastUtils.showShort(R.string.tip_inject_pass_success);
         /**
@@ -724,6 +741,7 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
          * 设置模具
          */
         request.setMouldcode(mMoulds.get(dvMold.getSpinnerSelectIndex()).getValue());
+        request.setMouldcode2(mMoulds.get(dvMold2.getSpinnerSelectIndex()).getValue());
         /**
          * 设置工位
          */
