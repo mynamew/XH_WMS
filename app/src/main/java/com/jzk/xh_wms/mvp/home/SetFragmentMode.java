@@ -41,7 +41,7 @@ public class SetFragmentMode extends MvpBaseModel {
      * @param url
      * @param observer
      */
-    public void downLoadApk(final String url, Observer<File> observer) {
+    public void downLoadApk(final String url,Observer<File> observer) {
         HttpManager.getInstance().downLoadAPkRequest(observer, url);
     }
 }

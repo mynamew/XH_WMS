@@ -15,7 +15,8 @@ public class Constants {
      * 是否下载了最新版本的安装包
      */
     public static final String IS_HAVE_DOWNLOAD_NEW = "is_have_download_new";
-    public static final String APK_NAME = "hebi.apk";      //apk 名称
+    //apk 名称
+    public static final String APK_NAME = "Xh_Cps.apk";
     /**********
      * 状态栏颜色
      *********************************************************************************************/

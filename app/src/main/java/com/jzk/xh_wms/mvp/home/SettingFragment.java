@@ -341,7 +341,7 @@ public class SettingFragment extends BaseFragment<SetFragmentView, SetFragmentPr
         Intent intent = new Intent();
         // 执行动作
         intent.setAction(Intent.ACTION_VIEW);
-        File file = new File(SDCardUtils.getAPKPath(getActivity()) + "/" + Constants.APK_NAME);
+        File file = new File(SDCardUtils.getAPKPath(getActivity()) + "/" +Constants.APK_NAME);
         // 执行的数据类型
         intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
         getActivity().startActivity(intent);

@@ -238,12 +238,7 @@ public class StationSelectActivity extends BaseActivity<StationSelectView, Stati
             mInjectMolds.clear();
             mInjectMolds.addAll(stations);
             //设置数据源
-            dvInjectMachine.initDeviceData(mInjectMolds, new DeviceView.DeviceListener() {
-                @Override
-                public void deviceSelect(int position) {
-                    dealWithInjectAndSupply(position);
-                }
-            });
+            dvInjectMachine.initDeviceData(mInjectMolds,this::dealWithInjectAndSupply);
             dvInjectMachine.setEdittextContent(mInjectMolds.get(0).getValue());
             dvInjectMachine.setSpinnerEdittextSelect();
         }

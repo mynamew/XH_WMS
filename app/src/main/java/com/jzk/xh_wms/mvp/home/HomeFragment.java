@@ -289,13 +289,22 @@ public class HomeFragment extends BaseFragment<HomeFragmentView, HomeFragmentPre
         try {
             String versionName = PackageUtils.getVersionName(getActivity());
             //新版本号：需要自己合成
-            final String newVersion = versionBean.getVersion() / 100 + "." + versionBean.getVersion() % 100 / 10 + "." + versionBean.getVersion()%100 % 10;
+            final String newVersion = versionBean.getVersion() / 100 + "." + versionBean.getVersion() % 100 / 10 + "." + versionBean.getVersion() % 100 % 10;
 
             String updateUrl = SpUtils.getInstance().getBaseUrl() + versionBean.getPath();
             //是否需要版本更新
             if (!versionName.equals(newVersion)) {
                 showProgressDialog();
                 getPresenter().downLoad(updateUrl, versionBean, newVersion);
+            } else {
+                /**
+                 * 删除相应的安装包
+                 */
+                String path = SDCardUtils.getAPKPath(getContext()) + "/" +Constants.APK_NAME;
+                File file = new File(path);
+                if (file.exists()) {
+                    file.delete();
+                }
             }
             //设置版本更新的标识
             SpUtils.getInstance().putBoolean(Constants.IS_HAVE_DOWNLOAD_NEW, versionName.equals(newVersion));
@@ -313,11 +322,10 @@ public class HomeFragment extends BaseFragment<HomeFragmentView, HomeFragmentPre
                         Intent intent = new Intent();
                         // 执行动作
                         intent.setAction(Intent.ACTION_VIEW);
-                        File file = new File(SDCardUtils.getAPKPath(getActivity()) + "/" + Constants.APK_NAME);
+                        File file = new File(SDCardUtils.getAPKPath(getActivity()) + "/" +Constants.APK_NAME);
                         // 执行的数据类型
                         intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
                         getActivity().startActivity(intent);
-
                     }
                 });
         /**

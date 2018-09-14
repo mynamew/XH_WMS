@@ -292,7 +292,7 @@
                     android:text=""
                     android:textColor="#666"/>
             </LinearLayout>
-            <com.jzk.hebi_wms.view.DeviceView
+            <com.jzk.xh_wms.view.DeviceView
                 android:id="@+id/dv_machine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
