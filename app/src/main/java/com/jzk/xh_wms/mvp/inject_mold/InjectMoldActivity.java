@@ -235,6 +235,17 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
                 InputMethodUtils.hide(InjectMoldActivity.this);
             }
         });
+        dvMold2.setEdittextListener(new DeviceView.EdittextInputListener() {
+            @Override
+            public void verticalSuccess(String result) {
+
+            }
+
+            @Override
+            public void hideInputSoftware() {
+                InputMethodUtils.hide(InjectMoldActivity.this);
+            }
+        });
         /**
          * 设置默认不显示不良操作模块
          */
