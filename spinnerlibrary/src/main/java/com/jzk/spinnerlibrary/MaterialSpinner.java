@@ -496,9 +496,12 @@ public class MaterialSpinner extends AppCompatTextView {
 
   private int calculatePopupWindowHeight() {
     if (adapter == null) {
-      return WindowManager.LayoutParams.WRAP_CONTENT;
+      return popupWindowMaxHeight;
     }
     float itemHeight = getResources().getDimension(R.dimen.ms__item_height);
+    if(adapter.getCount()<=0){
+      return WindowManager.LayoutParams.WRAP_CONTENT;
+    }
     float listViewHeight = adapter.getCount() * itemHeight;
     if (popupWindowMaxHeight > 0 && listViewHeight > popupWindowMaxHeight) {
       return popupWindowMaxHeight;

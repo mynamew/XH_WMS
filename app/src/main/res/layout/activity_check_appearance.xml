@@ -197,7 +197,7 @@
                         android:layout_height="64px"
                         android:textSize="13sp"
                         app:ms_dropdown_height="wrap_content"
-                        app:ms_dropdown_max_height="350dp"
+                        app:ms_dropdown_max_height="200dp"
                         app:ms_hint_color="@color/color_666"/>
                 </LinearLayout>
             </LinearLayout>
@@ -264,7 +264,7 @@
                         android:layout_height="64px"
                         android:textSize="13sp"
                         app:ms_dropdown_height="wrap_content"
-                        app:ms_dropdown_max_height="350dp"
+                        app:ms_dropdown_max_height="200dp"
                         app:ms_hint_color="@color/color_666"/>
                 </LinearLayout>
             </LinearLayout>

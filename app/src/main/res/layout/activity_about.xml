@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/set_bg"
     android:orientation="vertical"
-    tools:context="com.jzk.xh_wms.mvp.about.AboutActivity">
+    tools:context=".mvp.about.AboutActivity">
 
     <include
         layout="@layout/title_head"/>

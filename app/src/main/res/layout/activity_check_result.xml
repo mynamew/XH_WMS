@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.jzk.xh_wms.mvp.ipqc.result.CheckResultActivity">
+    tools:context=".mvp.ipqc.result.CheckResultActivity">
 
     <include layout="@layout/title_head"/>
 
@@ -186,7 +186,7 @@
                         android:layout_height="64px"
                         android:textSize="13sp"
                         app:ms_dropdown_height="wrap_content"
-                        app:ms_dropdown_max_height="350dp"
+                        app:ms_dropdown_max_height="200dp"
                         app:ms_hint_color="@color/color_666"/>
                 </LinearLayout>
 
@@ -290,7 +290,7 @@
                         android:layout_height="64px"
                         android:textSize="13sp"
                         app:ms_dropdown_height="wrap_content"
-                        app:ms_dropdown_max_height="350dp"
+                        app:ms_dropdown_max_height="200dp"
                         app:ms_hint_color="@color/color_666"/>
                 </LinearLayout>
 

@@ -57,7 +57,7 @@
             android:layout_height="64px"
             android:textSize="13sp"
             app:ms_dropdown_height="wrap_content"
-            app:ms_dropdown_max_height="350dp"
+            app:ms_dropdown_max_height="200dp"
             app:ms_hint_color="@color/color_666"/>
     </LinearLayout>
 
@@ -86,7 +86,7 @@
             android:textSize="13sp"/>
     </LinearLayout>
 
-        <com.jzk.xh_wms.view.DeviceView
+    <com.jzk.xh_wms.view.DeviceView
         android:id="@+id/dv_cnc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
