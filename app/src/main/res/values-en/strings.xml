@@ -255,7 +255,7 @@
     <string name="device">Equipment</string>
     <string name="all">All</string>
     <string name="tip_input_device_noalive">The device you entered does not exist！</string>
-    <string name="count_pass_qty">过站计数器：</string>
+    <string name="count_pass_qty">Pass Count：</string>
     /**====== 成品入库======**/
     <string name="create_task_orderno">生产任务单</string>
     <string name="create_orderno_date_tip">制单日期</string>
@@ -276,4 +276,5 @@
     <string name="item_material_model">规格型号</string>
     <string name="item_material_attr">附加属性</string>
     <string name="header_wait_count_num">清点</string>
+    <string name="tip_no_same_model">Two molds can not choose the same mold, please choose again!</string>
 </resources>

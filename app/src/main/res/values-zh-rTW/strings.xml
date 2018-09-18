@@ -6,19 +6,19 @@
     /******************************************************************************************************************************************************/
     /******************************************************************************************************************************************************/
     /**====== 異常 ======**/
-    <string name="exp_network_exception">網絡連接異常，請檢查您的網絡狀態</string>
-    <string name="exp_network_timeout">網絡連接超時，請檢查您的網絡狀態，稍後重試</string>
+    <string name="exp_network_exception">網酪連接異常，請檢查您的網酪狀態</string>
+    <string name="exp_network_timeout">網酪連接超時，請檢查您的網酪狀態，稍後重試</string>
     <string name="exp_json_error">數據解析錯誤</string>
     <string name="exp_server_timeout">服務器連接超時</string>
     /**====== 登錄 ======**/
-    <string name="user_log_tip">用戶登錄</string>
+    <string name="user_log_tip">用護登錄</string>
     <string name="login_login">立即登錄</string>
     <string name="login_inpiut_psw">請輸入密碼</string>
-    <string name="login_input_username">請輸入用戶名</string>
+    <string name="login_input_username">請輸入用護名</string>
     <string name="login_app_name">智能倉庫管理系統</string>
     <string name="login_remember_psw">記錄密碼</string>
     <string name="login_success">登錄成功</string>
-    <string name="language_simple">簡體</string>
+    <string name="language_simple">間體</string>
     <string name="language_tradtional">繁體</string>
     <string name="language_english">英文</string>
     <string name="login_select_language">請選擇語言</string>
@@ -35,7 +35,7 @@
     /******************************************************************************************************************************************************/
     /******************************************************************************************************************************************************/
     /**====== 個人設置 ======**/
-    /**====== 用戶信息 ======**/
+    /**====== 用護信息 ======**/
     <string name="set_userinfo_num">編號：%1$s</string>
     <string name="set_userinfo_name">姓名：%1$s</string>
     <string name="set_userinfo_sex">性別：%1$s</string>
@@ -44,13 +44,13 @@
     <string name="set_userinfo_depart">部門：%1$s</string>
     <string name="set_userinfo_root">權限組織：%1$s</string>
     <string name="login_url_tip">地址：</string>
-    <string name="login_zuhu">租戶：</string>
+    <string name="login_zuhu">租護：</string>
     <string name="login_language">語言：</string>
     <string name="login_set">配置服務</string>
     <string name="login_please_input_serverurl">請輸入服務地址</string>
     <string name="login_please_input_right_serverurl">請輸入正確地址</string>
     <string name="login_confirm_set">設置</string>
-    <string name="login_please_input_zuhu">請輸入租戶信息</string>
+    <string name="login_please_input_zuhu">請輸入租護信息</string>
     /**====== 設置 ======**/
     <string name="set_language">選擇語言</string>
     <string name="set_exit">退出登錄</string>
@@ -58,7 +58,7 @@
     <string name="set_about">關於軟件</string>
     <string name="set_update_psw">修改密碼</string>
     <string name="set_device_info">設備信息</string>
-    <string name="set_userinfo">用戶信息</string>
+    <string name="set_userinfo">用護信息</string>
     <string name="server_set">服務設置</string>
     <string name="set_team">組織切換</string>
     <string name="go_login">去登錄</string>
@@ -71,7 +71,7 @@
     <string name="set_deviceinfo_ip">IP地址：%1$s</string>
     <string name="comfirm_set">確認設置</string>
     <string name="update_password">更改密碼</string>
-    <string name="set_pda_code_success">設置PDA參數成功！</string>
+    <string name="set_pda_code_success">設置PDA慘數成功！</string>
     /**====== 更改密碼 ======**/
     <string name="update_password_oldpsw">原密碼：</string>
     <string name="please_input_old_psw">請輸入原密碼</string>
@@ -80,7 +80,7 @@
     <string name="upadte_password_repeat">再壹次密碼：</string>
     <string name="please_repeat_input_password">請再次輸入新密碼</string>
     <string name="show_password">顯示密碼</string>
-    <string name="about">\t\t條碼追溯系統，利用條碼技術，賦給產品電子標簽、對物料進行條碼識別、工藝作業自動記錄等信息化技術手段，來進行防錯、監控、實時分析和追蹤等，實現產品生產的防錯、精益生產和管理，極大地提高了生產效益和產品質量，大大地提高了客戶的滿意度。</string>
+    <string name="about">\t\t條碼追溯系統，利用條碼技術，賦給產品電子標簽、對物料進行條碼識別、工藝作業自動記錄等信息化技術手段，來進行防錯、監控、實時分析和追蹤等，實現產品生產的防錯、精益生產和管理，極大地提高了生產效益和產品質量，大大地提高了客護的滿意度。</string>
     <string name="confirm_logout">確認退出登錄？</string>
     <string name="logout">退出登錄</string>
     <string name="reset_server_will_logout">重新配置服務將退出登錄</string>
@@ -109,7 +109,7 @@
     <string name="no_process">暫無工序</string>
     <string name="no_process_no_commit">暫無工序，不能提交！</string>
     <string name="process_list">工序列表</string>
-    <string name="user_not_select_process">用戶尚未選擇工序，請選擇工序！</string>
+    <string name="user_not_select_process">用護尚未選擇工序，請選擇工序！</string>
     /**====== 供料上料 ======**/
     <string name="title_add_material">供料上料</string>
     <string name="no_worker_order_info">暫無工位信息</string>
@@ -172,7 +172,7 @@
     <string name="polish_device">拋光設備</string>
     <string name="tip_bad_code_have_selected">您選擇的不良代碼已經選中，請重新選擇！</string>
     <string name="tip_set_servise_address">請先配置服務地址</string>
-    <string name="tip_username">請輸入用戶名</string>
+    <string name="tip_username">請輸入用護名</string>
     <string name="tip_password">請輸入密碼</string>
     <string name="input_polish_device">請輸入/掃描拋光設備</string>
     /**====== ipqc 外觀抽檢作業 ======**/
@@ -186,9 +186,9 @@
     <string name="time_frame_code">時段代碼</string>
     <string name="time_frame_name">時段名稱</string>
     <string name="plan_date">計劃日期</string>
-    <string name="actual_sample">實際樣本</string>
-    <string name="pass_sample">合格樣本</string>
-    <string name="unpass_sample">不合格樣本</string>
+    <string name="actual_sample">實際洋本</string>
+    <string name="pass_sample">合格洋本</string>
+    <string name="unpass_sample">不合格洋本</string>
     <string name="product_status">狀態</string>
     <string name="batch_pass">批通過</string>
     <string name="batch_return">批退</string>
@@ -205,7 +205,7 @@
     /**====== 版本更新======**/
     <string name="tip_forced_update">當前更新為強制更新，請安裝最新版本！</string>
     <string name="tip_version_update">版本更新</string>
-    <string name="user_have_select">用戶已選擇</string>
+    <string name="user_have_select">用護已選擇</string>
     /**====== 工序是否正確的判斷======**/
     <string name="tip_no_inject_process">當前工序不是註塑工序，請先選擇工序</string>
     <string name="process_inject">MD</string>
@@ -215,7 +215,7 @@
     <string name="process_cnc2">CNC2</string>
     <string name="tip_no_cnc_process1">當前工序不是CNC1工序，請先選擇工序！</string>
     <string name="tip_no_cnc_process2">當前工序不是CNC2工序，請先選擇工序！</string>
-    <string name="next">下一項</string>
+    <string name="next">下壹項</string>
     <string name="quality_total">抽檢總數</string>
     <string name="count_quality_total">計算抽檢總數</string>
     <string name="tip_bad_code_no_alive">您輸入/掃描的不良代碼不存在！</string>
@@ -227,7 +227,7 @@
     <string name="process_paint">SP</string>
     <string name="tip_no_paint">當前工序不是噴漆工序，請先選擇工序</string>
     <string name="tip_no_cnc_device">您輸入/掃描的CNC設備不存在！</string>
-    <string name="tip_no_polish_device">您輸入的抛光設備不存在！</string>
+    <string name="tip_no_polish_device">您輸入的拋光設備不存在！</string>
     <string name="input_piant">請輸入/掃描噴漆設備</string>
     <string name="tip_no_paint_device">您輸入/掃描的噴漆設備不存在！</string>
     <string name="paint_device">噴漆設備</string>
@@ -250,7 +250,7 @@
     <string name="result">結果</string>
     <string name="status">狀態：</string>
     <string name="please_select">請選擇</string>
-    /**====== 选择设备======**/
+    /**====== 選擇設備======**/
     <string name="device_type">設備類型</string>
     <string name="title_select_device">選擇設備</string>
     <string name="tip_select_device_type">請選擇設備類型！</string>
@@ -258,25 +258,26 @@
     <string name="device">設備</string>
     <string name="all">全部</string>
     <string name="tip_input_device_noalive">您輸入的設備不存在！</string>
-    <string name="count_pass_qty">过站计数器：</string>
-    /**====== 成品入库======**/
-    <string name="create_task_orderno">生产任务单</string>
-    <string name="create_orderno_date_tip">制单日期</string>
-    <string name="orderno_num">单据总数</string>
-    <string name="wait_count_num">待点总数</string>
-    <string name="have_count_num">已扫总数</string>
-    <string name="in_stock_total_num">入库总数</string>
-    <string name="create_product_orderno">生成产成品入库单</string>
+    <string name="count_pass_qty">過站計數器：</string>
+    /**====== 成品入庫======**/
+    <string name="create_task_orderno">生產任務單</string>
+    <string name="create_orderno_date_tip">制單日期</string>
+    <string name="orderno_num">單據總數</string>
+    <string name="wait_count_num">待點總數</string>
+    <string name="have_count_num">已掃總數</string>
+    <string name="in_stock_total_num">入庫總數</string>
+    <string name="create_product_orderno">生成產成品入庫單</string>
     <string name="materail_info">物料信息</string>
-    <string name="lib_code">目的库位码</string>
-    <string name="please_scan_lib_location_code">请输入或扫描库位码</string>
-    <string name="scan_material">物料条码</string>
-    <string name="please_scan_material_code">请输入或扫描物料码</string>
-    <string name="scan_info">扫描信息</string>
-    <string name="item_material_code">物料编码</string>
-    <string name="item_material_num">物料数量</string>
-    <string name="item_material_name">物料名称</string>
-    <string name="item_material_model">规格型号</string>
-    <string name="item_material_attr">附加属性</string>
-    <string name="header_wait_count_num">清点</string>
+    <string name="lib_code">目的庫位碼</string>
+    <string name="please_scan_lib_location_code">請輸入或掃描庫位碼</string>
+    <string name="scan_material">物料條碼</string>
+    <string name="please_scan_material_code">請輸入或掃描物料碼</string>
+    <string name="scan_info">掃描信息</string>
+    <string name="item_material_code">物料編碼</string>
+    <string name="item_material_num">物料數量</string>
+    <string name="item_material_name">物料名稱</string>
+    <string name="item_material_model">規格型號</string>
+    <string name="item_material_attr">附加屬性</string>
+    <string name="header_wait_count_num">清點</string>
+    <string name="tip_no_same_model">兩個模具不能夠選擇同樣的模具，請重新選擇！</string>
 </resources>
