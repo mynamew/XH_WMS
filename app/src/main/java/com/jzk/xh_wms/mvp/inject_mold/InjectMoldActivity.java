@@ -28,6 +28,7 @@ import com.jzk.xh_wms.data.inject.InjectPassBean;
 import com.jzk.xh_wms.data.station.InjectMoldBean;
 import com.jzk.xh_wms.data.station.StationBean;
 import com.jzk.xh_wms.data.station.StationRequest;
+import com.jzk.xh_wms.utils.CommonDialogUtils;
 import com.jzk.xh_wms.utils.InputMethodUtils;
 import com.jzk.xh_wms.utils.SpUtils;
 import com.jzk.xh_wms.utils.ToastUtils;
@@ -134,6 +135,7 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
      * @return
      */
     private List<InjectMoldBean.EqpmentsBean> mMoulds = new ArrayList<>();
+    private List<InjectMoldBean.EqpmentsBean> mMoulds2 = new ArrayList<>();
     private List<InjectMoldBean.EqpmentsBean> mOldMoulds = new ArrayList<>();
     /**
      * 工序Code
@@ -191,6 +193,15 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
         setEdittextListener(etAddMaterialOrder, Constants.REQUEST_SCAN_CODE_BARCODE, R.string.input_product_code, R.string.input_no_low_four, new EdittextInputListener() {
             @Override
             public void verticalSuccess(String result) {
+                /**
+                 * 设置模具
+                 */
+                String model2Value = mMoulds2.get(dvMold2.getSpinnerSelectIndex()).getValue();
+                String model1Value = mMoulds.get(dvMold.getSpinnerSelectIndex()).getValue();
+                if (model1Value.equals(model2Value)){
+                    CommonDialogUtils.showErrorTipDialog(InjectMoldActivity.this, getResources().getString(R.string.error_title), getString(R.string.tip_no_same_model));
+                    return;
+                }
                 /**
                  * 校验的方法
                  */
@@ -367,8 +378,10 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
          * 清空链表
          */
         mMoulds.clear();
+        mMoulds2.clear();
         if (TextUtils.isEmpty(mInjectMolds.get(position).getRelatedEquipment())) {
             mMoulds.addAll(mOldMoulds);
+            mMoulds2.addAll(mOldMoulds);
             /**
              * 初始化数据
              */
@@ -379,10 +392,10 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
             /**
              * 初始化数据
              */
-            dvMold2.setEdittextContent(mMoulds.get(0).getValue());
+            dvMold2.setEdittextContent(mMoulds2.get(0).getValue());
             dvMold2.setSpinnerSelectIndex(0);
             //设置数据源
-            dvMold2.initDeviceData(mMoulds);
+            dvMold2.initDeviceData(mMoulds2);
             return;
         }
 
@@ -396,12 +409,13 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
                 if (split[j].equals(mOldMoulds.get(i).getValue())) {
                     isHaveData = true;
                     mMoulds.add(mOldMoulds.get(i));
-                    mMoulds.add(mOldMoulds.get(i));
+                    mMoulds2.add(mOldMoulds.get(i));
                 }
             }
         }
         if (!isHaveData) {
             mMoulds.addAll(mOldMoulds);
+            mMoulds2.addAll(mOldMoulds);
         }
         /**
          * 初始化数据
@@ -413,10 +427,10 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
         /**
          * 初始化数据
          */
-        dvMold2.setEdittextContent(mMoulds.get(0).getValue());
+        dvMold2.setEdittextContent(mMoulds2.get(0).getValue());
         dvMold2.setSpinnerSelectIndex(0);
         //设置数据源
-        dvMold2.initDeviceData(mMoulds);
+        dvMold2.initDeviceData(mMoulds2);
     }
 
     @Override
@@ -656,6 +670,15 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
             case R.id.iv_scan:
                 scan(Constants.REQUEST_SCAN_CODE_BARCODE, (requestCode, result) -> {
                     etAddMaterialOrder.setText(result);
+                    /**
+                     * 设置模具
+                     */
+                    String model2Value = mMoulds2.get(dvMold2.getSpinnerSelectIndex()).getValue();
+                    String model1Value = mMoulds.get(dvMold.getSpinnerSelectIndex()).getValue();
+                    if (model1Value.equals(model2Value)){
+                        CommonDialogUtils.showErrorTipDialog(this, getResources().getString(R.string.error_title), getString(R.string.tip_no_same_model));
+                        return;
+                    }
                     // TODO: 2018/7/20  校验
                     CheckRCardInfoRquest request = new CheckRCardInfoRquest();
                     request.setRCard(result);
@@ -751,8 +774,14 @@ public class InjectMoldActivity extends BaseActivity<InjectMoldView, InjectMoldP
         /**
          * 设置模具
          */
+        String model2Value = mMoulds2.get(dvMold2.getSpinnerSelectIndex()).getValue();
+        String model1Value = mMoulds.get(dvMold.getSpinnerSelectIndex()).getValue();
+        if (model1Value.equals(model2Value)){
+            CommonDialogUtils.showErrorTipDialog(this, getResources().getString(R.string.error_title), getString(R.string.tip_no_same_model));
+            return;
+        }
         request.setMouldcode(mMoulds.get(dvMold.getSpinnerSelectIndex()).getValue());
-        request.setMouldcode2(mMoulds.get(dvMold2.getSpinnerSelectIndex()).getValue());
+        request.setMouldcode2(mMoulds2.get(dvMold2.getSpinnerSelectIndex()).getValue());
         /**
          * 设置工位
          */
